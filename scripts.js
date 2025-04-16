@@ -24,7 +24,7 @@
  */
 
 
-// This is an array of objects that store all anime info
+// This is an array of objects that store all anime infos
 let animeList = [
   {
     title: "EIGHTY-SIX",

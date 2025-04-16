@@ -23,6 +23,7 @@
  *
  */
 
+
 // This is an array of objects that store all anime info
 let animeList = [
   {
@@ -292,6 +293,8 @@ document.addEventListener("DOMContentLoaded", function ()
     }
   };
 });
+
+
 
 
 

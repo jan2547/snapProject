@@ -1,19 +1,19 @@
-
-/*general page reset and background */
+/* general page reset and background */
 html,
 body {
   margin: 0;
   padding: 0;
   background-color: #000000;
-
 }
-/*header styling */
+
+/* header styling */
 .main-header {
   background-color: #000000;
   padding-bottom: 5px;
   font-size: 10px;
 }
-/*title styling */
+
+/* title styling */
 .title {
   text-align: center;
   font-family: "Poetsen One", "Verdana", sans-serif;
@@ -28,14 +28,14 @@ body {
           0 0 40px #ff1493;
 }
 
-/*card-container styling */
+/* card-container styling */
 #card-container {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
   white-space: nowrap;
-  gap:40px;
-  margin-top:-60px;
+  gap: 40px;
+  margin-top: -60px;
   padding: 100px 5px;
   scroll-behavior: smooth;
   min-height: 500px;
@@ -44,10 +44,12 @@ body {
   align-items: flex-start;
   margin-left: 40px;
 }
-/*hide horizontal scrollbar in browsers*/
+
+/* hide horizontal scrollbar in browsers */
 #card-container::-webkit-scrollbar {
   display: none;
 }
+
 /* individual card style */
 .card {
   width: 350px;
@@ -57,9 +59,10 @@ body {
   margin-top: 20px;
   background-color: #EEEEEE;
   transition: transform 0.3s ease, box-shadow 0.3s;
-  flex:0 0 auto;
+  flex: 0 0 auto;
   overflow: hidden;
 }
+
 /* card hover effect */
 .card:hover {
   transform: scale(1.05);
@@ -92,6 +95,7 @@ body {
   color: #393131;
   white-space: normal;
 }
+
 /* anime image */
 .card img {
   width: 100%;
@@ -100,6 +104,7 @@ body {
   border-radius: 5px;
   padding-bottom: 10px;
 }
+
 /* image wrapper to center and size the image */
 .img-wrapper {
   width: 100%;
@@ -109,11 +114,13 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+
 /* fade effect on non-hovered cards */
 #card-container:hover .card {
   opacity: 0.5;
   transition: opacity 0.2s ease;
 }
+
 /* restore opacity for hovered card */
 #card-container:hover .card:hover {
   opacity: 1;
@@ -122,32 +129,35 @@ body {
 /* hide anime details by default */
 .card .genre,
 .card .episodes,
-.card .rating{
+.card .rating {
   display: none;
 }
+
 /* show anime details only when hovering on a card */
 .card:hover .genre,
 .card:hover .episodes,
-.card:hover .rating{
+.card:hover .rating {
   display: block;
 }
 
 /* container for genre filter buttons */
-.filter-buttons{
+.filter-buttons {
   text-align: left;
   margin-top: 50px;
   margin-left: 30px;
   width: 100%;
   margin-bottom: 2px;
 }
+
 /* individual genre button styles */
-.genre-btn{
+.genre-btn {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Verdana", sans-serif;
   font-size: 20px;
 }
+
 /* highlight selected genre button */
 .genre-btn.selected {
   background-color: #86003C;
@@ -155,22 +165,25 @@ body {
   font-weight: bold;
   box-shadow: 0 0 10px #86003C;
 }
+
 /* hover effect for genre buttons */
-.genre-btn:hover{
+.genre-btn:hover {
   background-color: #86003C;
   color: white;
   cursor: pointer;
 }
+
 /* container for sorting dropdown */
-.sort-bar{
+.sort-bar {
   text-align: right;
   margin-top: -38px;
   margin-right: 80px;
   border-radius: 5px;
   cursor: pointer;
 }
+
 /* styling the rating dropdown */
-#sort-rating{
+#sort-rating {
   cursor: pointer;
   padding: 4px 5px;
   margin-top: 1px;
@@ -179,8 +192,8 @@ body {
   font-family: "Verdana", sans-serif;
   background-color: #fff;
   color: #393131;
-
 }
+
 /* footer style */
 .footer {
   display: flex;
@@ -188,6 +201,7 @@ body {
   padding: 30px 0;
   background-color: #000;
 }
+
 /* random Anime Button */
 #random-btn {
   background-color: #FF8BA0;
@@ -201,6 +215,7 @@ body {
   transition: 0.3s ease;
   margin-top: -55px;
 }
+
 /* hover effect for the random button */
 #random-btn:hover {
   background-color: #ffd633;

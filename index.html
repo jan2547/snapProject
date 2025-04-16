@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anime Picked | Home</title>
+    <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1 class="title">Senpai Selects</h1>
+    </header>
+    <!-- Filter genre -->
+    <div class="filter-buttons">
+      <button class="genre-btn" data-genre="all">All</button>
+      <button class="genre-btn" data-genre="Action">Action</button>
+      <button class="genre-btn" data-genre="Fantasy">Fantasy</button>
+      <button class="genre-btn" data-genre="Romance">Romance</button>
+      <button class="genre-btn" data-genre="Drama">Drama</button>
+      <button class="genre-btn" data-genre="Adventure">Adventure</button>
+      <button class="genre-btn" data-genre="Historical">Historical</button>
+      <button class="genre-btn" data-genre="Sci-Fi">Sci-Fi</button>
+      <button class="genre-btn" data-genre="Mystery">Mystery</button>
+      <button class="genre-btn" data-genre="Sport">Sport</button>
+      <button class="genre-btn" data-genre="Supernatural">Supernatural</button>
+      <button class="genre-btn" data-genre="Comedy">Comedy</button>
+      <button class="genre-btn" data-genre="Thriller">Thriller</button>
+      <!-- Dropdown menu to sort anime by rating -->
+      <div class="sort-bar">
+        <label for="sort-rating">Sort by:</label>
+        <select id="sort-rating">
+          <option value="none">-- Select --</option>
+          <option value="rating-desc">Rating (High to Low)</option>
+          <option value="rating-asc">Rating (Low to High)</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="card-container"></div>
+    <!-- Template card -->
+    <div class="card" style="display: none">
+      <div class="card-content">
+        <div class="img-wrapper">
+        <img src="" alt="Anime Poster" />
+        </div>
+        <h2>Anime Title</h2>
+        <p class="genre">Genre:</p>
+        <p class="episodes">Episodes:</p>
+        <p class="rating">Rating:</p>
+      </div>
+    </div>
+    <!-- random anime -->
+    <div class="footer">
+      <button id="random-btn" > Pick a Random Anime</button>
+    </div>
+
+  </body>
+</html>
